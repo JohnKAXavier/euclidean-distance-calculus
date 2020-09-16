@@ -1,1 +1,1 @@
-# euclidean-distance-calculus
+# Euclidean Distance Calculus
