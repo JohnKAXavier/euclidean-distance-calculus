@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "98ec1d14-a781-4247-a599-9b3a28880e84",
+		"name": "Euclidean Calculus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Calculate Distance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"addresses\":[\n        {\n            \"addressName\": \"R. Dr. Bernardino, 253 - Praça Seca, Rio de Janeiro - RJ\"\n        },\n        {\n            \"addressName\": \"Estr. dos Bandeirantes, 1393 - Jacarepaguá, Rio de Janeiro - RJ\"\n        },\n        {\n            \"addressName\": \"R. Comendador Guerra, 614 - Pavuna, Rio de Janeiro - RJ\"\n        },\n        {\n            \"addressName\": \"Av. Pastor Martin Luther King Júnior, 10041 - Coelho Neto, Rio de Janeiro - RJ\"\n        }  \n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
